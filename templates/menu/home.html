@@ -1,0 +1,5 @@
+{% if is_staff %}
+    {% include "../vacancy/create_vacancy.html" with form=vacancy_form redirect=vacancy_redirect title=title %}
+{% else %}
+    {% include "../resume/create_resume.html" with form=resume_form redirect=resume_redirect title=title %}
+{% endif %}
